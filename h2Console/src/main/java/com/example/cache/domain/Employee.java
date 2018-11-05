@@ -11,6 +11,9 @@ import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import org.springframework.cache.annotation.Cacheable;
+
+@Cacheable("employee")
 @Entity
 @Table(name = "EMPLOYEE")
 public class Employee {
